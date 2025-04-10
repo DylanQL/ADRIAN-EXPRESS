@@ -1,12 +1,24 @@
 {
   "name": "adrian--express",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Inventory Management System API with Express and MySQL",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down",
+    "docker:dev": "docker-compose up --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "mysql",
+    "docker",
+    "api",
+    "crud"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -15,5 +27,8 @@
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "mysql2": "^3.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
